@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @author Mauro
  */
-public class GerarDados {
+public class FabricaDados {
 
     public static List<Medico> carregaMedicos() {
 
