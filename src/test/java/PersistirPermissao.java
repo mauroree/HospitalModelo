@@ -21,7 +21,7 @@ public class PersistirPermissao {
         EntityManager em = enf.createEntityManager();
         Permissao p = new Permissao();
         p.setDescricao("Permissão de ADM");
-        p.setNome("Administrador");
+        p.setNome("ADMINISTRADOR");
         em.getTransaction().begin();
         em.persist(p);
         em.getTransaction().commit();
