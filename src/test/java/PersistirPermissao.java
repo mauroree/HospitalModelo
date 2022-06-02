@@ -1,24 +1,33 @@
 
-import br.edu.ifsul.modelo.Especialidade;
+import br.edu.ifsul.modelo.Permissao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 /**
  *
  * @author Mauro
  */
-public class PersistirEspecialidade {
+public class PersistirPermissao {
 
     public static void main(String[] args) {
+
         EntityManagerFactory enf = Persistence.createEntityManagerFactory("HospitalModel_PU");
         EntityManager em = enf.createEntityManager();
-        Especialidade e = new Especialidade();
-        e.setDescricao("PRIMEIRA");
+        Permissao p = new Permissao();
+        p.setDescricao("Permissão de ADM");
+        p.setNome("Administrador");
         em.getTransaction().begin();
-        em.persist(e);
+        em.persist(p);
         em.getTransaction().commit();
         em.close();
         enf.close();
+
     }
+
 }

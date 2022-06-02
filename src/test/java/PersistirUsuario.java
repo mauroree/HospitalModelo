@@ -21,9 +21,9 @@ public class PersistirUsuario {
         EntityManagerFactory enf = Persistence.createEntityManagerFactory("HospitalModel_PU");
         EntityManager em = enf.createEntityManager();
         Usuario u = new Usuario();
-        u.setNomeUsuario("mrxjr");
+        u.setNomeUsuario("mrxjrAdmin");
         u.setNome("Mauro"); 
-        u.setSenha("123456");
+        u.setSenha("123456987");
         u.setEmail("maurojr@gmail.com");
         u.setAtivo(true);
         u.setDataCadastro(Calendar.getInstance());
