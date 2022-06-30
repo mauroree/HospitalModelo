@@ -14,7 +14,7 @@ public class PersistirEspecialidade {
         EntityManagerFactory enf = Persistence.createEntityManagerFactory("HospitalModel_PU");
         EntityManager em = enf.createEntityManager();
         Especialidade e = new Especialidade();
-        e.setDescricao("PRIMEIRA");
+        e.setDescricao("PEDIATRA");
         em.getTransaction().begin();
         em.persist(e);
         em.getTransaction().commit();

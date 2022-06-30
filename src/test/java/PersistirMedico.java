@@ -25,7 +25,7 @@ public class PersistirMedico {
         m.setAltura(1.70);
         m.setCrm("99009900");
         Especialidade e = new Especialidade();
-        e.setDescricao("Pediatra");
+        e.setDescricao("PEDIATRA");
         m.setEspecialidade(e);
         m.setHistorico("Formado em medicina pela universidade tal.");
         m.setNascimento(Calendar.getInstance());

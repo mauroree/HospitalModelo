@@ -19,7 +19,7 @@ public class PersistirPermissoes {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("HospitalModel_PU");
         EntityManager em = emf.createEntityManager();
-        Usuario u = em.find(Usuario.class, "mrxjrAdmin");
+        Usuario u = em.find(Usuario.class, "mauro");
         Permissao p1 = em.find(Permissao.class, "ADMINISTRADOR");
         u.getPermissoes().add(p1);
         em.getTransaction().begin();

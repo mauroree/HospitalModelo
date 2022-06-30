@@ -20,7 +20,7 @@ public class PersistirPermissao {
         EntityManagerFactory enf = Persistence.createEntityManagerFactory("HospitalModel_PU");
         EntityManager em = enf.createEntityManager();
         Permissao p = new Permissao();
-        p.setDescricao("Permissão de ADM");
+        p.setDescricao("administrador");
         p.setNome("ADMINISTRADOR");
         em.getTransaction().begin();
         em.persist(p);
