@@ -25,7 +25,11 @@ public class FabricaDados {
         m.setCrm("12345678");
         m.setSexo("Masculino");
         m.setTelefone("((54)99776655");
-        m.setHistorico("Médio formado pela universidade dos médicos do brasil.");
+        m.setHistorico("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus sollicitudin felis "
+                + "acfacilisis. Nunc feugiat elementum vulputate. Etiam est augue, maximus eu ultricies ut, "
+                + "elementum et lacus. Aliquam sit amet iaculis dolor. Nullam quis egestas nulla, nec malesuada nisi. "
+                + "Aliquam eget erat pharetra, scelerisque eros vitae, tincidunt nisl. Ut gravida leo id mi elementum efficitur. "
+                + "Quisque feugiat velit et tincidunt sollicitudin. Integer ut est tristique, scelerisque nulla et, faucibus velit..");
         m.setPeso(79.00);
         m.setAltura(1.70);
         m.setNascimento(Calendar.getInstance());
