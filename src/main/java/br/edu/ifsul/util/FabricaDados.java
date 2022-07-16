@@ -62,7 +62,7 @@ public class FabricaDados {
         c.setId(1);
         c.setData(Calendar.getInstance());
         c.setHora(Calendar.getInstance());
-        c.setPreConsulta("Exames requiros para intolerãncias. ");
+        c.setPreConsulta("Dores.");
         c.setPosConsulta("Remédios receitados.");
         c.setMedico(carregaMedicos().get(0));
         c.setPaciente(carregaPacientes().get(0));
@@ -80,11 +80,11 @@ public class FabricaDados {
 
         Receituario r1 = new Receituario();
         r1.setId(1);
-        r1.setPosologia("1 comprido de 12 em 12 horas.");
+        r1.setPosologia("12 em 12h");
         r1.setValidade(Calendar.getInstance());
         Receituario r2 = new Receituario();
         r2.setId(2);
-        r2.setPosologia("2 comprimidos antes de fazer uma refeição.");
+        r2.setPosologia("10 em 10h");
         r2.setValidade(Calendar.getInstance());
         c.adicionarReceituario(r1);
         c.adicionarReceituario(r2);
