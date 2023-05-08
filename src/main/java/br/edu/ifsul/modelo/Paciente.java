@@ -20,10 +20,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 
-/**
- *
- * @author João
- */
+
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Paciente implements Serializable {
